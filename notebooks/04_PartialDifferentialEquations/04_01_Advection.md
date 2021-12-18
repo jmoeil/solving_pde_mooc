@@ -262,7 +262,7 @@ For our first attempt at solving equation \eqref{eq:advection}, we choose the fo
 The discretization then proceeds as follows:
 
 \begin{align}
-\frac{d u^n_i}{dt} &\approx \frac{u^{n+1}_i - u^n_i}{dt}, \; \; \; \frac{\partial u}{\partial x}(x_i, t^n) \approx \frac{u^n_{i+1} - u^n_i}{\Delta x} \\
+\frac{\partial u^n_i}{\partial t} &\approx \frac{u^{n+1}_i - u^n_i}{dt}, \; \; \; \frac{\partial u}{\partial x}(x_i, t^n) \approx \frac{u^n_{i+1} - u^n_i}{\Delta x} \\
 & \Rightarrow \;
 u^{n+1}_i = u^n_i -cdt \frac{u^n_{i+1} - u^n_i}{\Delta x}
 \end{align}
