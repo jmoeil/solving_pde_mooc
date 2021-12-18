@@ -516,8 +516,9 @@ As explained above, we must make sure that $L$ is large enough to accommodate th
 Away from the boundaries, we use the backward finite difference scheme for the discretization of the derivative operator and couple it to the forward Euler time integration scheme (we have seen that this combination is stable with an appropriate choice of time step).
 
 In fact, we can also use backward finite differentiation at the right boundary node. Using negative indexing, we may write:
-
-`u^{n+1}[-1] = u^n_i[-1] -cdt (u^n[-1] - u^n[-2])/dx`
+\begin{equation}
+u^{n+1}[-1] = u^n_i[-1] -cdt (u^n[-1] - u^n[-2])/dx
+\end{equation}
 
 At the left boundary node we cannot use this formula directly as there is no point available to the left of this point. However, thanks to the periodicity of the domain, this missing *ghost* point can be associated with the point `x[-2]` as shown in this diagram:
 
