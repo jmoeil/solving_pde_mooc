@@ -520,7 +520,7 @@ In fact, we can also use backward finite differentiation at the right boundary n
 u^{n+1}[-1] = u^n_i[-1] -cdt (u^n[-1] - u^n[-2])/dx
 \end{equation}
 
-At the left boundary node we cannot use this formula directly as there is no point available to the left of this point. However, thanks to the periodicity of the domain, this missing *ghost* point can be associated with the point `x[-2]` as shown in this diagram:
+At the left boundary node we cannot use this formula directly as there is no point available to the left of this point. However, thanks to the periodicity of the domain, this missing *ghost* point can be associated with the point $x[-2]$ as shown in this diagram:
 
 <img width="600px" src="../figures/backwardDiff1periodic.png">
 

@@ -288,18 +288,19 @@ One of them is called the modified wavenumber analysis. It works for linear, con
 
 Consider again the first order wave equation:
 
-$$
+\begin{equation}
+   \label{eq:wave}
    \frac{\partial u}{\partial t}+c\frac{\partial u}{\partial x}=0,\; c>0.
-$$
+\end{equation}
+
 
 For the modified wavenumber stability analysis, we need to use periodic boundary conditions. Strictly speaking, the results therefore only apply to this case. In practice, the stability criteria inferred through this method is quite robust because boundary conditions do not often play a significant role.
 
 If our domain is periodic, we may decompose the exact solution $u(x,t)$ in Fourier series:
 
-\begin{equation}
-\label{eq:wave}
-    u(x,t)=\sum_{m} \hat{u}(k_m,t) e^{ik_m x},\; \; k_m = \frac{2\pi m}{L}
-\end{equation}
+$$
+  u(x,t)=\sum_{m} \hat{u}(k_m,t) e^{ik_m x},\; \; k_m = \frac{2\pi m}{L}
+$$
 
 where $k_m$ are the wavenumbers, $L$ is the periodicity of the domain and $\hat{u}(k_m,t)$ are the time dependent Fourier coefficients of the decomposition. If we substitute this series in \eqref{eq:wave} we get,
 
